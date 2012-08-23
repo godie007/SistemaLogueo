@@ -19,10 +19,7 @@
 
                 </ul>
             </div>
-            <button class="btn btn-inverse" type="submit">Inicio</button>
             <input type="text" data-provide="typeahead">
-            <button class="btn btn-success" type="submit">Buscar</button>
-            <button class="btn btn-danger" type="submit">Salir</button>
             <div class="nav-collapse">
                 <ul class="nav">
 

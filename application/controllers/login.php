@@ -9,10 +9,11 @@ class Login extends CI_Controller {
 
   function index()
   {
+    $data['title'] = 'Godie007';
+    $data['usuario'] = 'Godie007';
     $this->load->helper('form');
     $this->load->view('login_view');
   }
 
 }
 
-?>

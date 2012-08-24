@@ -115,6 +115,36 @@
                                         });  
                                     });  
                                 </script>  -->
+                               <h1>ingresar</h1>
+				   <form class="form-horizontal" method="POST" action="http://localhost/index.php?/main/registrar" >
+                   <form class="form-horizontal" method="POST" action="http://localhost/index.php?/main/registrar" >
+                <div class="control-group">
+                    <label class="control-label"name="nombre" for="inputEmail">Operando1</label>
+                    <div class="controls">
+                        <input type="text" name="nombre" class="input-size" id="input01">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Operando2</label>
+                    <div class="controls">
+                        <input type="text" name="correo" class="input-size" id="input01">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">operando3</label>
+                    <div class="controls">
+                        <input type="password" name="passworda" class="input-size" placeholder="Password">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            
+            
+            
                 <form name="MyForm"> 
                     <input type="text" name="numero1" size="20"> 
                     <input type="text" name="numero2" size="20"> 

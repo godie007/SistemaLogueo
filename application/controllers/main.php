@@ -11,7 +11,7 @@ class Main extends CI_Controller {
     public function ingresar() {
         $data = $this->input->post();
         $this->load->model('usuario_model');
-        $this->modelo_Ingresarl->registrarUsuario($data['resultado']);
-        redirect('login');
+        $this->operar_model->ingresarDato($data['nombre'], $data['correo'], $data['passworda']);
+        redirect('home');
     }
 }

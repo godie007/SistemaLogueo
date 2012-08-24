@@ -7,9 +7,11 @@ class Usuario_model extends CI_Model {
         $this->load->database();
     }
 
-    public function registrarUsuario($resultado) {
+    public function registrarUsuario($nombre, $correo, $password) {
         $data = array(
-            'resultado' => $resultado,
+            'username' => $nombre,
+            'correo' => $correo,
+            'password' => md5($password)
         );
         $this->db->insert('users', $data);
     }

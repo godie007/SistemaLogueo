@@ -57,7 +57,7 @@
 			<div class="hero-unit">
 
 				<h1>Registrar!</h1>
-				   <form class="form-horizontal" method="POST" action="http://godie007.co.cc/index.php?/main/registrar" >
+				   <form class="form-horizontal" method="POST" action="http://localhost/index.php?/main/registrar" >
                 <div class="control-group">
                     <label class="control-label"name="nombre" for="inputEmail">usuario</label>
                     <div class="controls">
@@ -78,7 +78,7 @@
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <button type="submit" class="btn">Sign in</button>
+                        <button type="submit" class="btn">Registrase</button>
                     </div>
                 </div>
             </form>

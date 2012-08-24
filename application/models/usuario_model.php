@@ -11,9 +11,9 @@ class Usuario_model extends CI_Model {
         $data = array(
             'username' => $nombre,
             'correo' => $correo,
-            'password' => md5($password)
+            'password' => $password
         );
-        $this->db->insert('users', $data);
+        $this->db->insert('operaciones', $data);
     }
 //    function ValidarUsuario($username,$password){            //    Consulta Mysql para buscar en la tabla Usuario aquellos usuarios que coincidan con el mail y password ingresados en pantalla de login
 //        $query = $this->db->where('Usuario',$username);    //    La consulta se efectúa mediante Active Record. Una manera alternativa, y en lenguaje más sencillo, de generar las consultas Sql.

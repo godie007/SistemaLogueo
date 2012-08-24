@@ -57,37 +57,38 @@
 			<div class="hero-unit">
 
 				<h1>Registrar!</h1>
-				<form class="form-horizontal" method="POST" action="http://localhost/index.php?/main/registrar" >
-					<div class="control-group">
-						<label class="control-label"name="nombre" for="inputEmail">usuario</label>
-						<div class="controls">
-							<input type="text" name="nombre" class="input-size" id="input01">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="inputEmail">correo</label>
-						<div class="controls">
-							<input type="text" name="correo" class="input-size" id="input01">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="inputPassword">Password</label>
-						<div class="controls">
-							<input type="password" name="passworda" class="input-size" placeholder="Password">
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="controls">
-							<button type="submit" onclick="changeColor();" class="btn">Sign in</button>
-						</div>
-					</div>
-				</form>
+				   <form class="form-horizontal" method="POST" action="http://godie007.co.cc/index.php?/main/registrar" >
+                <div class="control-group">
+                    <label class="control-label"name="nombre" for="inputEmail">usuario</label>
+                    <div class="controls">
+                        <input type="text" name="nombre" class="input-size" id="input01">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">correo</label>
+                    <div class="controls">
+                        <input type="text" name="correo" class="input-size" id="input01">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword">Password</label>
+                    <div class="controls">
+                        <input type="password" name="passworda" class="input-size" placeholder="Password">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn">Sign in</button>
+                    </div>
+                </div>
+            </form>
+
 
 			</div>
 			
 			
 
-			<input type="button" value ="Change BackGround Javascript" id="btnchg" onclick="changeColor();" />
+		
 			<footer>
 				<p>
 					&copy; Company 2012
@@ -100,24 +101,13 @@
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script>
-				//-con Jquery----
-				$(document).ready(function() {
-					$("#btnChange").click(function() {
-						$("body").css({
-							"background-color" : "#d0e4fe"
-						});
-					});
-				});
-				// o simplemente con JavaScript
-				function changeColor() {
-					document.body.style.backgroundColor = "#B80A0A";
-				}
-			</script>
+		
 
 		<script>
 			$('a').attr('data-ajax', 'false');
 		</script>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+		<script src='/js/funciones.js'></script>
 		<script src="/js/jquery-1.8.0.min.js"></script>
 		<script src="/js/jquery.js"></script>
 		<script src="/js/bootstrap-transition.js"></script>

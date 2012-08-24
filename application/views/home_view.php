@@ -13,13 +13,13 @@
         <link href="styles/global.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="../css/bootstrap.css" rel="stylesheet">
         <style type="text/css">
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-            .sidebar-nav {
-                padding: 9px 0;
-            }
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+			.sidebar-nav {
+				padding: 9px 0;
+			}
         </style>
 
         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
@@ -132,8 +132,27 @@
                         <label for="contador">total:</label>
                         <input type="text" name="total" id="total">
                     </form>
+                 			<script>
+								//-con Jquery----
+								$(document).ready(function() {
+									$("#btnChange").click(function() {
+										$("body").css({
+											"background-color" : "#d0e4fe"
+										});
+									});
+								});
 
-            </div>
+								// o simplemente con JavaScript
+								function changeColor() {
+									document.body.style.backgroundColor = "#362D2D";
+								}
+						</script>
+
+						<input type="button" value ="Change BackGround Jquery" id="btnChange" />
+
+						<input type="button" value ="Change BackGround Javascript" id="btnchg" onclick="changeColor();" />
+
+						</div>
             
 
 
@@ -143,33 +162,33 @@
             <!-- Placed at the end of the document so the pages load faster -->
 
             <script type="text/javascript">
-                function Operaciones(){
-                    // Obtengo el valor de subtotal...
-                    var subtotal = document.getElementById('subtotal').value;
-                    // Ya que lo tengo le saco el 16%
-                    var iva = (subtotal * .16);
-                    // El resultado lo guardo en el input del iva.
-                    document.getElementById('iva').value = iva;
-                    // Sumo el subtotal + iva para tener el total.
-                    var total = (parseFloat(subtotal) + parseFloat(iva));
-                    // Lo muestro en el text de total.
-                    document.getElementById('total').value = total;
-                }
+				function Operaciones() {
+					// Obtengo el valor de subtotal...
+					var subtotal = document.getElementById('subtotal').value;
+					// Ya que lo tengo le saco el 16%
+					var iva = (subtotal * .16);
+					// El resultado lo guardo en el input del iva.
+					document.getElementById('iva').value = iva;
+					// Sumo el subtotal + iva para tener el total.
+					var total = (parseFloat(subtotal) + parseFloat(iva));
+					// Lo muestro en el text de total.
+					document.getElementById('total').value = total;
+				}
             </script>
             <script type="text/javascript">
-                var cont = 0;
-                function contador(){
-                    var contador = document.getElementById("contador");
-                    contador.value = cont;
-                    cont++;
-                }
+				var cont = 0;
+				function contador() {
+					var contador = document.getElementById("contador");
+					contador.value = cont;
+					cont++;
+				}
             </script>
-            <script> 
-                function multiplicar() { 
-                    var n1 = parseInt(document.MyForm.numero1.value); 
-                    var n2 = parseInt(document.MyForm.numero2.value); 
-                    document.MyForm.resultado.value=n1*n2; 
-                } 
+            <script>
+				function multiplicar() {
+					var n1 = parseInt(document.MyForm.numero1.value);
+					var n2 = parseInt(document.MyForm.numero2.value);
+					document.MyForm.resultado.value = n1 * n2;
+				}
             </script> 
             <script src="../js/jquery.js"></script>
             <script src="../js/bootstrap-transition.js"></script>
